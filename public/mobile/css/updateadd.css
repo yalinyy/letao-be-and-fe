@@ -1,0 +1,23 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-26 20:02:54
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-27 21:01:54
+*/
+body,.mui-content{
+	background-color: #f0eff3;
+}
+.mui-bar-nav~.mui-content{
+	padding-top: 60px;
+}
+.upadr {
+		font-size: 16px;
+}
+.mui-btn-block {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}

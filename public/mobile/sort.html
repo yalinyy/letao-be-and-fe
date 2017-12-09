@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>乐淘</title>
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/sort.css">
+		<link rel="stylesheet" href="./css/app.css">
+	</head>
+
+	<body>
+		<div class="lt-mob">
+			<!-- 头部 -->
+			<header id="header" class="mui-bar mui-bar-nav lt-search">
+				<a class="mui-action-back fa fa-long-arrow-left mui-pull-left" href="javascript:history.back();"></a>
+				<h1 class="mui-title"><input type="text"></h1>
+				<a class="fa fa-search mui-pull-right" href="search.html"></a>
+			</header>
+			<!-- 底部导航栏 -->
+			<footer class="mui-bar mui-bar-tab lt-footer">
+				<a class="mui-tab-item " href="./index.html">
+					<span class="fa fa-home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item mui-active" href="sort.html">
+					<span class="fa fa-bars"></span>
+					<span class="mui-tab-label">分类</span>
+				</a>
+				<a class="mui-tab-item" href="cart.html">
+					<span class="fa fa-shopping-cart"></span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item" href="percenter.html">
+					<span class="fa fa-user-o"></span>
+					<span class="mui-tab-label">会员中心</span>
+				</a>
+			</footer>
+
+			<!-- 正文内容 -->
+
+			<div class="mui-content left-side mui-row mui-fullscreen lt-sort" >
+				<div class="mui-col-xs-3 " id="list-left">
+					<div class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical sport tab lt-sort-sports" id="segmentedControls">
+						<a class="mui-control-item mui-active" href="#content1">
+							运动馆
+						</a>
+						<a class="mui-control-item" href="#content2">
+							女士馆
+						</a>
+						<a class="mui-control-item" href="#content3">
+							男士馆
+						</a>
+						<a class="mui-control-item" href="#content4">
+							帆布馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a><a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+						<a class="mui-control-item" href="#content5">
+							户外馆
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-xs-9" id="segmentedControlContents">
+					<div class="mui-control-content sport mui-active sort-right" id="content1">
+						<ul class="mui-table-view" id="sportlist">
+							<li class="mui-col-xs-4">
+								<a href="javascript:;">
+									<img src="images/brand1.png" alt="">
+									<span>耐克</span>
+								</a>
+							</li>
+							<li class="mui-col-xs-4">
+								<a href="javascript:;">
+									<img src="images/brand2.png" alt="">
+									<span>阿迪</span>
+								</a>
+							</li>
+							<li class="mui-col-xs-4">
+								<a href="javascript:;">
+									<img src="images/brand3.png" alt="">
+									<span>新百伦</span>
+								</a>
+							</li>
+							<li class="mui-col-xs-4">
+								<a href="javascript:;">
+									<img src="images/brand4.png" alt="">
+									<span>哥伦比亚</span>
+								</a>
+							</li>
+							<li class="mui-col-xs-4">
+								<a href="javascript:;">
+									<img src="images/brand5.png" alt="">
+									<span>匡威</span>
+								</a>
+							</li>
+							<li class="mui-col-xs-4"></li>
+						</ul>
+
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!--一级模板-->
+		<script type="text/template" id="first-template">
+ 		<%for(var i=0;i<rows.length;i++){%>
+			<%if(i==0){%>
+				
+				<a class="mui-control-item mui-active" data-id="<%=rows[i].id%>" href="javascript:;"><%=rows[i].categoryName%></a>
+			<%}else{%>
+				<a class="mui-control-item" data-id="<%=rows[i].id%>" href="#content<%=(i+1)%>"><%=rows[i].categoryName%></a>
+			<%}%>
+			
+		<%}%>
+		
+		</script>
+		<!--二级模板-->
+		<script type="text/template" id="second-template">
+			<%if(rows.length==0){%>
+				<p>暂无数据</p>
+			<%}else{%>
+				<ul class="mui-table-view" id="sportlist">
+					<%for(var i = 0;i <rows.length; i++){%>
+				<li class="mui-col-xs-4">
+								<a href="javascript:;">
+									<img src="<%=rows[i].brandLogo%>" alt="<%=rows[i].brandName%>">
+									<span><%=rows[i].brandName%></span>
+								</a>
+				</li>
+			<%}%>
+				</ul>
+			<%}%>
+			
+			
+		</script>
+		<script src="./lib/zepto/zepto.min.js"></script>
+		<script src="./js/mui.min.js"></script>
+		<script src="./lib/iscroll/iscroll.js"></script>
+		<script src="./lib/artTemplate/template-native.js"></script>
+		<script src="./js/common.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="js/sort.js"></script>
+
+	</body>
+
+</html>

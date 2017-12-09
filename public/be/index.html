@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>后台管理系统-首页</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css"/>
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css"/>
+    <link rel="stylesheet" href="css/admin.css"/>
+</head>
+<body>
+<!--侧边栏-->
+<aside class="ad_aside">
+    <!--商标-->
+    <div class="brand"><a href="index.html">ITCAST</a></div>
+    <!--用户-->
+    <div class="user">
+        <img src="images/default.png" alt=""/>
+        <span>超级管理员</span>
+    </div>
+    <!--菜单-->
+    <div class="menu">
+        <ul>
+            <li><a href="userManage.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+            <li>
+                <a href="javascript:;"><span class="glyphicon glyphicon-list"></span> 分类管理</a>
+                <div class="child" style="display: none">
+                    <a href="categoryFirst.html">一级分类</a>
+                    <a href="categorySecond.html">二级分类</a>
+                </div>
+            </li>
+            <li><a href="productManage.html"><span class="glyphicon glyphicon-tags"></span> 商品管理</a></li>
+        </ul>
+    </div>
+</aside>
+<!--内容-->
+<section class="ad_section">
+    <!--顶部导航-->
+    <nav class="ad_nav">
+        <a data-menu href="javascript:;"><span class="glyphicon glyphicon-align-justify"></span></a>
+        <a data-logout href="javascipt:;"><span class="glyphicon glyphicon-log-out"></span></a>
+    </nav>
+    <div class="container-fluid">
+        <!--路径导航-->
+        <ol class="breadcrumb">
+            <li><a href="#">管理系统</a></li>
+            <li class="active">首页</li>
+        </ol>
+        <div class="ad_content">
+            <div class="picTable" id="bar"></div>
+            <div class="picTable" id="pie"></div>
+        </div>
+    </div>
+</section>
+<!-- 以下是模态框 退出功能的 因为每一个页面都有这个功能 所以我通过js的方式添加进来 -->
+<!-- <div class="modal fade" tabindex="-1" id="modal" >
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">用户退出</h4>
+        </div>
+        <div class="modal-body">
+          <p style="margin:0">您确定要退出登录账号吗？</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary">确定</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="./lib/nprogress/nprogress.js"></script>
+<script src="./lib/echarts/echarts.min.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

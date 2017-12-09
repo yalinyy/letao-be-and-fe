@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乐淘云购</title>
+  <!-- 引入MUI的CSS文件 -->
+  <link rel="stylesheet" href="./css/mui.min.css">
+  
+  <!-- 引入fontAwesome字体图标库 -->
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <!-- 引入公共样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <!-- 引入当前页面的CSS -->
+  <link rel="stylesheet" href="./css/search.css">
+  <!-- 引入网站图标 -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="lt-search">
+  <!-- 固定头部 -->
+  <header class="lt-header mui-bar mui-bar-nav">
+    <a href="javascript:history.back();" class="fa fa-arrow-left mui-pull-left "></a>
+    <a class="fa fa-search mui-pull-right mui-plus-visible"></a>
+    <h1 class="mui-title">搜索中心</h1>
+  </header>
+  <!-- 固定底部 -->
+  <footer class="lt-footer mui-bar mui-bar-tab">
+    <a class="mui-item " href="./index.html">
+      <span class="fa fa-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-item" href="./sort.html">
+      <span class="fa fa-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-item" href="./cart.html">
+      <span class="fa fa-shopping-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-item" href="./percenter.html">
+      <span class="fa fa-user"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </footer>
+  <!-- 滚动内容 -->
+  <div class="mui-content">
+    <form>
+      <div class="search-box">
+        <span>搜索</span>
+        <input type="text" placeholder="搜索你喜欢的商品">
+      </div>
+    </form>
+    <!-- <div class="history-list mui-clearfix">
+      没有搜索历史
+    </div> -->
+    <div class="history-list mui-clearfix">
+      <span class="mui-pull-left">搜索历史</span>
+      <span class="mui-pull-right clear" id="clear-all">
+        <i class="fa fa-trash"></i> 清空记录
+      </span>
+      <ul>
+        <li class="mui-clearfix">
+          <span class="mui-pull-left">nike</span>
+          <i class="fa fa-times mui-pull-right"></i>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+  <script type="text/template" id="history-template">
+    <%if(list.length==0){%>
+    没有搜索历史
+  <%}else{%>
+    <span class="mui-pull-left">搜索历史</span>
+      <span class="mui-pull-right clear" id="clear-all">
+        <i class="fa fa-trash"></i> 清空记录
+      </span>
+      <ul>
+        <%for(var i=0;i<list.length;i++){%>
+        <li class="mui-clearfix">
+          <span class="mui-pull-left"><%=list[i]%></span>
+          <i class="fa fa-times mui-pull-right"></i>
+        </li>
+      <%}%>
+        
+      </ul>
+ <%}%>
+  </script>
+ <script src="./lib/mui/js/mui.js"></script>
+  <script src="./lib/artTemplate/template-native.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./js/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<button class="btn btn-success btn-bock"></button>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+			var $btn=$('button');
+			console.log($btn);
+			$btn.removeClass('btn-success');
+			$btn.addClass('btn-xs');
+			$btn.tooltip();
+		})
+	</script>
+	
+</body>
+</html>

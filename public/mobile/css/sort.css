@@ -1,0 +1,86 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-25 20:57:13
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-28 13:48:05
+*/
+/* 分类 */
+.mui-content {
+    background-color: #cdcac4;
+   
+}
+.mui-content .mui-col-xs-3{
+	height: 100%;
+	overflow: hidden;
+}
+.mui-fullscreen {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.mui-segmented-control .mui-control-item {
+    line-height: 38px;
+    display: table-cell;
+    font-size: 18px;
+    overflow: hidden;
+    width: 100%;
+    -webkit-transition: background-color .1s linear;
+    transition: background-color .1s linear;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #007aff;
+    border-color: #007aff;
+    background-color: #fff;
+    border-left: 1px solid #007aff;
+}
+#list-left a{
+    background-color: #cdcac4f;
+    color: #000;
+
+}
+
+ /* 运动馆 右边 */
+.mui-segmented-control.tab a {
+  width: 100%;
+  background-color: #fff;
+}
+.mui-control-content.mui-table-view{
+    width: 75%;
+}
+
+.mui-col-xs-9{
+    padding-left: 10px;
+
+}
+.sport #sportlist.mui-table-view>.mui-col-xs-4{
+    display: inline-block;
+    margin: 0px;
+    width: 32%;
+    text-align: center;
+    overflow: hidden;
+}
+.sport #sportlist.mui-table-view>.mui-col-xs-4>a{
+    text-align: center;
+    display:inline-block;
+    width:100%;
+    margin-bottom: 5px;
+
+}
+.sport #sportlist.mui-table-view>.mui-col-xs-4>a img{
+  
+    width: 100%;
+    vertical-align: middle;
+}
+#sportlist>.mui-col-xs-4 a span{
+    display: inline-block;
+    font-size: 14px;
+} 
+.mui-table-view-cell {
+    position: relative;
+    overflow: hidden;
+    padding: 11px 15px;
+    font-size: 14px;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乐淘云购</title>
+  <!-- 引入MUI的CSS文件 -->
+  <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+  <!-- 引入fontAwesome字体图标库 -->
+  <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.min.css">
+  <!-- 引入公共样式 -->
+  <link rel="stylesheet" href="../css/common.css">
+  <!-- 引入当前页面的CSS -->
+  <link rel="stylesheet" href="../css/detail.css">
+  <!-- 引入网站图标 -->
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body class="lt-detail">
+  <!-- 固定头部 -->
+  <header class="lt-header mui-bar mui-bar-nav">
+    <a href="javascript:history.back();" class="fa fa-arrow-left mui-pull-left "></a>
+    <a class="fa fa-home mui-pull-right "></a>
+    <h1 class="mui-title">商品详情</h1>
+  </header>
+  <!-- 固定底部 -->
+  <footer class="lt-footer mui-bar mui-bar-tab">
+    <a href="../cart.html" class="fa fa-shopping-cart cart-btn"></a>
+    <a href="javascript:;" class="add-cart">加入购物车</a>
+    <a href="javascript:;" class="buy">立即购买</a>
+  </footer>
+  <!-- 滚动内容 -->
+  <div class="mui-scroll-wrapper">
+      <div class="mui-scroll">
+
+  <div class="mui-content ">
+  
+    <!-- 轮播图 -->
+    <div class="lt-carousel mui-slider ">
+        <div class="mui-slider-group mui-slider-loop">
+          <div class="mui-slider-item mui-slider-item-duplicate">
+            <a href="#">
+              <img src="../images/banner3.png">
+            </a>
+          </div>
+          <div class="mui-slider-item mui-active">
+            <a href="#">
+              <img src="../images/detail.jpg">
+            </a>
+          </div>
+          <div class="mui-slider-item">
+            <a href="#">
+              <img src="../images/product.jpg">
+            </a>
+          </div>
+          <div class="mui-slider-item">
+            <a href="#">
+              <img src="../images/banner3.png">
+            </a>
+          </div>
+          <div class="mui-slider-item mui-slider-item-duplicate">
+            <a href="#">
+              <img src="../images/detail.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="mui-slider-indicator">
+          <div class="mui-indicator mui-active"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+        </div>
+      </div>
+
+    <!-- 名称 -->
+    <p class="product-name">
+      Sport飓风 Nike Kwazi 休闲运动鞋男 844839-002-001-100-400
+    </p>
+    <!-- 价格 -->
+    <div class="product-price">
+      价格: <span class="new">¥499.1</span> <span class="old">¥888.1</span>
+    </div>
+    <!-- 尺码 -->
+    <div class="product-size">
+      <b>尺码:</b> 
+      <span>30</span>
+      <span>31</span>
+      <span>32</span>
+      <span>33</span>
+      <span>34</span>
+      <span>35</span>
+      <span>36</span>
+      <span>37</span>
+      <span>38</span>
+      <span>39</span>
+      <span>40</span>
+      <span>41</span>
+      <span>42</span>
+      <span>43</span>
+      <span>44</span>
+      <span>45</span>
+      <span>46</span>
+      <span>47</span>
+      <span>48</span>
+      <span>49</span>
+      <span>50</span>
+    </div>
+    <!-- 数量  -->
+    <div class="product-number">
+      <b>数量:</b>
+      <span class="jian">-</span>
+      <input readonly type="text" value="0">
+      <span class="jia">+</span>
+      <strong>剩余20件</strong>
+    </div>
+  </div>
+  </div>
+   </div> 
+  
+ 
+  
+  <script type="text/template" id="detail-template">
+  	
+  		 <!-- 轮播图 -->
+    <div class="lt-carousel mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+        	<!--替补-->
+          <div class="mui-slider-item mui-slider-item-duplicate">
+            <a href="#">
+              <img src="<%=pic[pic.length-1].picAddr%>">
+            </a>
+          </div>
+         <% for(var i=0;i<pic.length;i++){%>
+          	<%if(i==0){%>
+          		 <div class="mui-slider-item mui-active">
+            <a href="#">
+              <img src="<%=pic[i].picAddr%>">
+            </a>
+          </div>
+          	<%}else{%>
+          		
+          <div class="mui-slider-item">
+            <a href="#">
+              <img src="<%=pic[i].picAddr%>">
+            </a>
+          </div>
+          	<%}%>
+         
+         <%}%>
+         
+         <!--替补-->
+          <div class="mui-slider-item mui-slider-item-duplicate">
+            <a href="#">
+              <img src="<%=pic[0].picAddr%>">
+            </a>
+          </div>
+        </div>
+        <div class="mui-slider-indicator">
+        	<%for(var i =0;i<pic.length;i++){%>
+        		<%if(i==0){%>
+        			<div class="mui-indicator mui-active"></div>
+        		<%}else{%>
+        			<div class="mui-indicator"></div>
+        		<%}%>
+        	
+        	<%}%>
+          
+        </div>
+      </div>
+
+    <!-- 名称 -->
+    <p class="product-name">
+      <%=proName%>
+    </p>
+    <!-- 价格 -->
+    <div class="product-price">
+      价格: <span class="new">¥<%=price%></span> <span class="old">¥<%=oldPrice%></span>
+    </div>
+    <!-- 尺码 -->
+    <div class="product-size">
+      <b>尺码:</b> 
+  
+    </div>
+    <!-- 数量  -->
+     <div class="product-number">
+      <b>数量:</b>
+     <div class="mui-numbox" data-numbox-step='1' data-numbox-min="0" data-numbox-max="<%=num%>">
+    <!-- "-"按钮，点击可减小当前数值 -->
+    <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+    <input class="mui-numbox-input" type="number" />
+    <!-- "+"按钮，点击可增大当前数值 -->
+    <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+  </div>
+      <strong>剩余<%=num%>件</strong>
+    </div>
+  	
+  	
+  </script>
+  <script type="text/template" id="size-template">
+  	<%for(var i=start;i<=end;i++){%>
+  <span><%=i%></span>
+  	<%}%>
+  	
+  </script>
+  <script src="../lib/mui/js/mui.js"></script>
+    <!--<script src="../js/common.js"></script>-->
+  <script src="../lib/zepto/zeptoT.min.js"></script>
+  <script src="../lib/artTemplate/template-native.js"></script>
+  <script src="../js/detail.js"></script>
+  <script>
+			mui('.mui-scroll-wrapper').scroll({
+    	deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	   scrollY: true, //是否竖向滚动
+		 scrollX: false, //是否横向滚动
+		 startX: 0, //初始化时滚动至x
+		 startY: 0, //初始化时滚动至y
+		 indicators: true, //是否显示滚动条
+		 deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+		 bounce: true //是否启用回弹
+
+		});
+		</script>
+ 
+</body>
+
+</html>

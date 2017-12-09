@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乐淘云购</title>
+  <!-- 引入MUI的CSS文件 -->
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <!-- 引入fontAwesome字体图标库 -->
+  <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.min.css">
+  <!-- 引入公共样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <!-- 引入当前页面的CSS -->
+  <link rel="stylesheet" href="./css/cart.css">
+  <!-- 引入网站图标 -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body class="lt-cart">
+  <!-- 固定头部 -->
+  <header class="lt-header mui-bar mui-bar-nav">
+    <a class="fa fa-arrow-left  mui-pull-left"></a>
+    <a class="fa fa-refresh mui-pull-right"></a>
+    <h1 class="mui-title">购物车</h1>
+  </header>
+  <!-- 固定底部 -->
+  <footer class="lt-footer mui-bar mui-bar-tab">
+    <a class="mui-item " href="./index.html">
+      <span class="fa fa-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-item" href="./sort.html">
+      <span class="fa fa-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-item mui-active" href="./cart.html">
+      <span class="fa fa-shopping-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-item" href="./percenter.html">
+      <span class="fa fa-user"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </footer>
+  <!-- 滚动内容 -->
+  <div class="mui-content mui-scroll-wrapper">
+    <div class="mui-scroll">
+      <ul class="mui-table-view">
+          <li  class="mui-table-view-cell">
+              <div class="mui-slider-right mui-disabled">
+                  
+                  <a  class="mui-btn mui-btn-blue">编辑</a>
+                  
+                  <a class="mui-btn mui-btn-red">删除</a>
+              </div>
+              <a href="javascript:;" class="mui-navigate-right mui-slider-handle">
+                  
+                  <img class="mui-media-object mui-pull-left" src="./images/detail.jpg">
+                  <div class="mui-media-body">
+                      <p class="name">李宁闪击篮球鞋驭帅10镭射队尚4男韦德之道空袭中高帮队尚3.5球鞋</p>
+                      <p class="info">
+                          <span class="price">¥499.1</span>
+                          <span class="oldPrice">¥888.1</span>
+                          <span class="number">x2双</span>
+                      </p>
+                      <p><span class="size">鞋码：45</span></p>
+                  </div>
+                  <input  type="checkbox">
+              </a>
+          </li>
+      </ul>
+    </div>
+    
+  </div>
+  <script type="text/template" id="cart-template">
+   <% for(var i= 0;i<list.length;i++ ){ %>
+    <li  class="mui-table-view-cell">
+      <div class="mui-slider-right mui-disabled">
+          
+          <a data-id="<%=list[i].id%>" class="mui-btn mui-btn-blue">编辑</a>
+          
+          <a data-id="<%=list[i].id%>" class="mui-btn mui-btn-red">删除</a>
+      </div>
+      <a href="javascript:;" class="mui-navigate-right mui-slider-handle">
+          
+          <img class="mui-media-object mui-pull-left" src="<%=list[i].pic[0].picAddr%>">
+          <div class="mui-media-body">
+              <p class="name"><%=list[i].proName%></p>
+              <p class="info">
+                  <span class="price">¥ <%=list[i].price%> </span>
+                  <span class="oldPrice">¥ <%=list[i].oldPrice%> </span>
+                  <span class="number">x <%=list[i].num%> 双</span>
+              </p>
+              <p><span class="size">鞋码：<%=list[i].size%></span></p>
+          </div>
+          <input data-id="<%=list[i].id%>"  type="checkbox">
+      </a>
+  </li>
+  <%}%>
+  </script>
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./lib/zepto/zeptoT.min.js"></script>
+  <script src="./lib/artTemplate/template-native.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+
+.lt-detail .lt-footer {
+  background-color: #e6e6e6;;
+  padding-left: 62px;
+}
+
+.lt-detail .lt-footer .cart-btn {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  font-size: 20px;
+  color: #333;
+}
+
+.lt-detail .lt-footer .add-cart {
+  width: 48%;
+  height: 39px;
+  line-height: 39px;
+  margin-top: 5px;
+  float: left;
+  border: 0;
+  background-color: #991020;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  border-radius: 2px;
+}
+
+.lt-detail .lt-footer .buy {
+  float: right;
+  margin-right: 6px;
+  background-color: #fa672d;
+  width: 48%;
+  height: 39px;
+  line-height: 39px;
+  margin-top: 5px;
+  border: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  border-radius: 2px;
+}
+
+
+
+.lt-detail {
+  background-color: #fff;
+}
+
+.lt-detail .lt-carousel {
+  background-color: #fff;
+}
+
+.lt-detail .product-name {
+  padding: 15px 5px;
+  font-size: 18px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #333333;
+  background-color: #fff;
+}
+
+.lt-detail .product-price {
+  background-color: #fff;
+  padding: 12px 5px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+
+.lt-detail .product-price .new {
+  font-size: 24px;
+  color: #ea543d;
+  font-weight: bold;
+}
+
+.lt-detail .product-price .old {
+  margin-left: 10px;
+  color: #afafaf;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.lt-detail .product-size {
+  background-color: #fff;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.lt-detail .product-size span {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+.lt-detail .product-size span.active{
+  background-color: red;
+  color: #fff;
+}
+.lt-detail .product-number {
+  background-color: #fff;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+.lt-detail .product-number b,.lt-detail .product-number strong {
+  font-weight: normal;
+}
+.lt-detail .product-number .jian {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.lt-detail .product-number input{
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.lt-detail .product-number .jia {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+.mui-content{
+  height: 700px;
+
+}

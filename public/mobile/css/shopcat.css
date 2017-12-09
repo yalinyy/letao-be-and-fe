@@ -1,0 +1,72 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-26 16:54:14
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-12-01 15:11:01
+*/
+/* 购物车 */
+.mui-content{
+	/* position: relative; */
+}
+.mui-content>.mui-table-view:first-child {
+    margin-top: 0;
+}
+.mui-media-object{
+	width: 20%;
+	height: 100%;
+	position: relative;
+}
+.mui-media-object img{
+	width: 100%;
+}
+
+.mui-media-object input{
+	margin-left: 8px;
+	display: block;
+}
+.shop-cat h4{
+	font-size: 14px;
+	word-wrap: break-word;
+	line-height: 1.5;
+}
+.shop-cat p span:first-child{
+	color: red;
+
+}
+.shop-cat p span del{
+	color: #d0cdc7;
+	font-size: 10px;
+
+}
+.order{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    height: 30px;
+    width: 100%;
+    border-top: 1px solid #d0cdc7;
+    line-height: 30px;
+     font-size: 14px;
+    font-weight: bold;
+    color: red;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.order a{
+	display: block;
+	background-color: red;
+	color: #fff;
+	text-align: center;
+	padding: 0 23px;
+	box-sizing: border-box;
+}
+.mui-navigate-right:after, .mui-push-right:after {
+    right: 0;
+    content: '';
+}
+.shop-cat .jiantou {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+ 
+}

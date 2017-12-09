@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>登录</title>
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/login.css">
+	</head>
+	<body>
+		<div class="lt-mob">
+			<!-- 头部 -->
+			<header id="header" class="mui-bar mui-bar-nav lt-search">
+				 <a href="javascript:history.back();" class="fa fa-arrow-left mui-pull-left "></a>
+				<h1 class="mui-title">登录</h1>
+				<!-- <a class="fa fa-search mui-pull-right"></a> -->
+			</header>
+			<!-- 底部导航栏 -->
+			<footer class="mui-bar mui-bar-tab lt-footer">
+                <a class="mui-tab-item " href="./index.html">
+                    <span class="fa fa-home"></span>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item " href="sort.html">
+                    <span class="fa fa-bars"></span>
+                    <span class="mui-tab-label">分类</span>
+                </a>
+                <a class="mui-tab-item" href="cart.html">
+                    <span class="fa fa-shopping-cart"></span>
+                    <span class="mui-tab-label">购物车</span>
+                </a>
+                <a class="mui-tab-item" href="percenter.html">
+                    <span class="fa fa-user-o"></span>
+                    <span class="mui-tab-label">会员中心</span>
+                </a>
+            </footer>
+			<!-- 正文内容 -->
+			<div class="mui-content ">
+				<div class="mui-content-padded upadr" style="margin: 5px;">
+					<form class="form"> 
+					<div class="mui-input-row mui-text up-name">
+						<input type="text" name="username" class="mui-input-text" placeholder="用户名/手机号">
+					</div>
+					<div class="mui-input-row mui-password">
+					<input type="password" name="password" class="mui-input-password up-pwd" placeholder="密码">
+					<span class="fa fa-eye up-eye"></span>
+					<!-- <i class="fa fa-eye"></i> -->
+				</div>
+					<button type="button" class="mui-btn mui-btn-primary mui-btn-block user-login">登录</button>
+				
+					<div class="mui-input-row mui-text signin pull-right">
+						<a href="register.html">免费注册</a>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		
+		<script src="./js/mui.min.js"></script>
+		<script src="./lib/zepto/zeptoT.min.js"></script>
+		<script src="./js/common.js"></script>
+		<script src="./js/login.js"></script>
+		<!-- <script src="./js/index.js"></script> -->
+	</body>
+</html>

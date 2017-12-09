@@ -1,0 +1,226 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-25 19:21:05
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-25 21:36:58
+*/
+/* 头部导航 */
+#header{
+	background-color: #046691;
+	line-height: 44px;
+}
+#header h1{
+	color: #fff;
+	font-size: 18px;
+}
+#header a{
+	color: #fff;
+	line-height: 44px;
+		font-size: 18px;
+}
+/* 底部导航栏 */
+.lt-footer{
+	background-color: #046691;
+}
+.mui-bar-tab .mui-tab-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color: #ff8207;
+}
+.mui-bar-tab .mui-tab-item .fa{
+	display: block;
+}
+
+
+/* 正文内容 */
+.mui-content {
+    background-color: #fff;
+}
+/* 轮播图 */
+.mui-slider-indicator {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background: 0 0;
+}
+/* 鞋品分类 */
+.lt-product img{
+	width: 100%;
+}
+.mui-grid-view.mui-grid-9 {
+    margin: 0;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    background-color:  #fff;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    border-right: none;
+    border-bottom: none;
+
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn) {
+    margin: 0;
+    padding: 0;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell {
+    font-size: 0px;
+    text-align: center;  
+}
+
+
+ .line{
+	width: 100%;
+	height: 2px;
+	background-color: #aaa;
+}
+
+.sale{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.sale .sale-l{
+	width: 60%;
+	float: left;
+}
+.sale .sale-l ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.sale .sale-l ul li{
+	width: 50%;
+	height: auto;
+}
+.sale .sale-l ul li img{
+width:100%;
+height: 100%;
+}
+
+.sale .sale-r{
+float: left;
+width: 30%;
+
+}
+.sale .sale-r img{
+width: 100%;
+height: auto;
+}
+.brand{
+	width: 100%;
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+
+}
+.brand img{
+	width: 90%;
+	height: 90%;
+}
+
+
+.sports{
+	width: 100%;
+	/* height: 300px; */
+	
+}
+.sports ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.sports ul li{
+width: 24%;
+	/* height: auto; */
+}
+.sports ul li img{
+width: 100%;
+	/* height: auto; */
+}
+.life{
+	width: 100%;
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+
+}
+
+.life  img{
+	width: 90%;
+	height: 90%;
+	/* display: block; */
+	/* margin-bottom: 20px; */
+}
+
+.life-shoes{
+	width: 100%;
+	box-sizing: border-box;
+
+
+}
+.life-shoes ul{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* overflow: hidden; */
+}
+.life-shoes ul li{
+	width: 42%;
+	margin: 2%;
+	float: left;
+	text-align: center;
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 10px 1px #ccc;
+}
+.life-shoes ul li:nth-child(3){
+	margin-bottom: 30%;
+}
+.life-shoes ul li:nth-child(4){
+	margin-bottom: 30%;
+}
+.life-shoes ul li img{
+	width: 100%;
+	/* height: 50%; */
+	/* vertical-align: middle; */
+}
+.life-shoes ul li p{
+	margin-bottom: 5px;
+}
+.life-shoes ul li span{
+	color: red;
+}
+.life-shoes ul li del {
+color: #ccc;
+text-decoration: line-through;
+}
+.life-shoes ul li a{
+	width: 80px;
+	height: 20px;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	margin: 5px 0;
+	text-align: center;
+	margin-left:50%;
+	transform: translate(-50%);
+	background-color:#006699 ;
+}

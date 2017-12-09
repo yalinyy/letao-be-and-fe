@@ -1,0 +1,67 @@
+/* 头部 */
+.lt-header {
+  background-color: #006699;
+}
+
+.lt-header a {
+  line-height: 45px;
+  color: #fff;
+}
+
+.lt-header .mui-title {
+  color: #fff;
+}
+
+.lt-header .mui-title input {
+  background-color: #fff;
+  color: #333;
+  line-height: 30px;
+} 
+
+/* 底部 */
+
+.lt-footer {
+  background-color: #006699;
+}
+
+.lt-footer .mui-item {
+  display: table-cell;
+  overflow: hidden;
+  width: 1%;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.lt-footer .mui-item.mui-active {
+  color: orange;
+}
+
+.lt-footer .mui-item span[class^="fa"] {
+  font-size: 20px;
+  position: relative;
+  z-index: 20;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.lt-footer .mui-item span.mui-tab-label {
+  font-size: 11px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/* 公共样式 */
+img {
+  width: 100%;
+  vertical-align: middle;
+}
